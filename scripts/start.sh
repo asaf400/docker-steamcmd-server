@@ -16,12 +16,12 @@ else
 fi
 
 echo "---Starting...---"
-mkdir -p $DATA_DIR/".local/share/Arma 3" && mkdir -p $DATA_DIR/".local/share/Arma 3 - Other Profiles"
+mkdir -p $DATA_DIR/".local/share/DayZ" && mkdir -p $DATA_DIR/".local/share/DayZ - Other Profiles"
 chown -R ${UID}:${GID} /opt/scripts
 chown -R ${UID}:${GID} ${DATA_DIR}
 chown -R ${UID}:${GID} $DATA_DIR/.local
-chmod -R 770 ${DATA_DIR}/".local/share/Arma 3"
-chmod -R 770 ${DATA_DIR}/".local/share/Arma 3 - Other Profiles"
+chmod -R 770 ${DATA_DIR}/".local/share/DayZ"
+chmod -R 770 ${DATA_DIR}/".local/share/DayZ - Other Profiles"
 
 term_handler() {
 	kill -SIGTERM "$killpid"

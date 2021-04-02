@@ -27,7 +27,7 @@ RUN mkdir $DATA_DIR && \
 	mkdir $SERVER_DIR && \
 	useradd -d $DATA_DIR -s /bin/bash $USER && \
 	chown -R $USER $DATA_DIR && \
-	mkdir -p $DATA_DIR/".local/share/Arma 3" && mkdir -p $DATA_DIR/".local/share/Arma 3 - Other Profiles" && \
+	mkdir -p $DATA_DIR/".local/share/DayZ" && mkdir -p $DATA_DIR/".local/share/DayZ - Other Profiles" && \
 	ulimit -n 2048
 
 ADD /scripts/ /opt/scripts/
