@@ -36,7 +36,7 @@ echo "---Prepare Server---"
 if [ ! -f ${SERVER_DIR}/server.cfg ]; then
     echo "---No 'server.cfg' found, downloading...---"
     cd ${SERVER_DIR}
-    if wget -q -nc --show-progress --progress=bar:force:noscroll https://raw.githubusercontent.com/ich777/docker-steamcmd-server/arma3/config/server.cfg ; then
+    if wget -q -nc --show-progress --progress=bar:force:noscroll https://raw.githubusercontent.com/asaf400/docker-steamcmd-server/dayz/config/server.cfg ; then
     	echo "---Sucessfully downloaded 'server.cfg'---"
 	else
     	echo "---Can't download 'server.cfg', putting server into sleep mode---"
